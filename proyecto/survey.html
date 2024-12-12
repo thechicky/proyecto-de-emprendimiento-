@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2e8b57;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+section {
+    padding: 20px;
+}
+
+
+.portfolio-item {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.portfolio-item h3 {
+    margin: 10px;
+}
+
+.survey-form input[type="text"],
+.survey-form input[type="email"],
+.survey-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.survey-form button {
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.survey-form button:hover {
+    background-color: #228b22;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta - Compra de Plantas Ornamentales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>contactanos</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="survey.html">Encuesta de Compra</a>
+    </nav>
+
+    <section id="encuesta">
+        <h2>Completa la encuesta para realizar tu compra</h2>
+        <form class="survey-form">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="planta">Planta de tu preferencia:</label>
+            <textarea id="planta" name="planta" rows="4" required></textarea>
+            
+            <label for="planta">lugar de encuentro:</label>
+            <textarea id="planta" name="planta" rows="4" required></textarea>
+            
+            <label for="email">DNI:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Enviar Encuesta</button>
+        </form>
+    </section>
+
+</body>
+</html>
